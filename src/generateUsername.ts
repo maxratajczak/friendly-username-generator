@@ -18,21 +18,25 @@ const defaultOptions: Options = {
 };
 
 export const generateUsername = (options: Options = {}) => {
-  const newOptions = { ...defaultOptions, ...options }; // Make sure default options are always set
+  const newOptions = { ...defaultOptions, ...options };
 
   const randomAdjective: string =
     adjectives[getRandomItemFromArray(adjectives)];
   const randomAnimal: string = animals[getRandomItemFromArray(animals)];
-  const randomNumber: number = getRandomNumber(0, 999);
-  let username = `${randomAdjective}-${randomAnimal}-${randomNumber}`;
+
+  const randomNumber1: number = getRandomNumber(1, 9);
+  const randomNumber2: number = getRandomNumber(1, 9);
+  const randomNumber3: number = getRandomNumber(1, 9);
+  const randomNumber4: number = getRandomNumber(1, 9);
+
+  let username = `${randomAdjective}-${randomAnimal}-${randomNumber1}${randomNumber2}${randomNumber3}${randomNumber4}`;
 
   if (!newOptions.useHyphen) {
-    username = username.replace("-", "");
+    username = username.replace(/[-]/g, "");
   }
 
   if (!newOptions.useRandomNumber) {
-    const matchNumbersRegex = /[0-9]/g;
-    username = username.replace(matchNumbersRegex, "");
+    username = username.replace(/[0-9]/g, "");
   }
 
   return username;
