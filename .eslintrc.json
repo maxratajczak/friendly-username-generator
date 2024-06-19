@@ -11,37 +11,18 @@
   },
   "plugins": ["jest"],
   "rules": {
-    "indent": [
-      "error",
-      2,
-      { "SwitchCase": 1 } // forces switch statements to be properly indented
-    ],
-    "quotes": [
-      "error",
-      "single"
-    ],
-    "semi": [
-      "error",
-      "never"
-    ],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"],
     "switch-colon-spacing": [
-      "error", {
-          "after": true, 
-          "before": false
+      "error",
+      {
+        "after": true,
+        "before": false
       }
     ],
-    "brace-style": [
-      "error",
-      "1tbs",
-      { "allowSingleLine": false }
-    ],
-    "curly": [
-      "error",
-      "all"
-    ],
-    "no-console": [
-      1,
-      { "allow": ["warn", "error"] }
-    ]
+    "brace-style": ["error", "1tbs", { "allowSingleLine": false }],
+    "curly": ["error", "all"],
+    "no-console": [1, { "allow": ["warn", "error"] }]
   }
 }

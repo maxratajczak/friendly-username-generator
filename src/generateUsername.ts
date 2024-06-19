@@ -37,20 +37,3 @@ export const generateUsername = (options: Options = {}) => {
 
   return username;
 };
-
-// TODO: to finish later on
-// export const generateBulkUsernames = (amountToGenerate: number = 10, options: Options = {}) => {
-//   const usernames = [];
-
-//   // Sanity check in case of null or 0
-//   if (!amountToGenerate || amountToGenerate < 1) {
-//     amountToGenerate = 10;
-//   }
-
-//   for (let i = 0; i < amountToGenerate; i++) {
-//     const username = generateUsername(options);
-//     usernames.push(username);
-//   }
-
-//   return usernames;
-// }

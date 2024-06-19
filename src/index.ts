@@ -1,1 +1,1 @@
-export { generateUsername } from './generateUsername';
+export { generateUsername } from "./generateUsername";

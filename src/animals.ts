@@ -1,4 +1,3 @@
-// TODO: move onto one line.
 export const animals = [
   "aardvark",
   "albatross",
@@ -224,4 +223,4 @@ export const animals = [
   "wren",
   "yak",
   "zebra",
-]
+];
