@@ -1,6 +1,6 @@
 {
   "name": "friendly-username-generator",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "A non-explicit random username generator",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
