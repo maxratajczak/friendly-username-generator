@@ -26,10 +26,8 @@ export const generateUsername = (options: Options = {}) => {
 
   const randomNumber1: number = getRandomNumber(1, 9);
   const randomNumber2: number = getRandomNumber(1, 9);
-  const randomNumber3: number = getRandomNumber(1, 9);
-  const randomNumber4: number = getRandomNumber(1, 9);
 
-  let username = `${randomAdjective}-${randomAnimal}-${randomNumber1}${randomNumber2}${randomNumber3}${randomNumber4}`;
+  let username = `${randomAdjective}-${randomAnimal}-${randomNumber1}${randomNumber2}`;
 
   if (!newOptions.useHyphen) {
     username = username.replace(/[-]/g, "");
